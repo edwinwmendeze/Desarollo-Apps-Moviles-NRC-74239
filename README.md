@@ -55,11 +55,25 @@ Calculadora que hace las operaciones básicas: suma, resta, multiplicación, div
 
 ---
 
-### Ejercicio 3: Calculadora para veterinarios (Pendiente)
+### Ejercicio 3: Calculadora para veterinarios (Terminado)
 
-App para calcular dosis de medicamentos para perros y gatos según su peso. También calcula cuántas pastillas o cuántos ml necesitan.
+App para calcular dosis de medicamentos para perros y gatos según su peso. Calcula dosis por toma, dosis diaria, número de tabletas o volumen en ml, y mantenimiento hídrico estimado.
 
-*Pendiente de hacer*
+**Archivos principales:**
+- [MainActivity.java](Unidad1/Ejercicio3/app/src/main/java/com/ewme/calcdosisvet/MainActivity.java)
+- [activity_main.xml](Unidad1/Ejercicio3/app/src/main/res/layout/activity_main.xml)
+
+**Pruebas:**
+- Perro 10kg, dosis 5mg/kg, 2 tomas/día, presentación 50mg/tableta:
+  - Dosis por toma: 50 mg
+  - Dosis diaria: 100 mg  
+  - Tabletas por toma: 1.0 tab
+  - Mantenimiento hídrico: 600 ml/día
+- Gato 4kg, dosis 2mg/kg, 3 tomas/día, concentración 20mg/ml:
+  - Dosis por toma: 8 mg
+  - Dosis diaria: 24 mg
+  - Volumen por toma: 0.4 ml
+  - Mantenimiento hídrico: 240 ml/día
 
 ---
 

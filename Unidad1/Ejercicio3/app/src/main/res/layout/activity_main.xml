@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cálculo de dosis (Veterinaria)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            />
+        <!--Especie-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especie"
+            />
+
+        <Spinner
+            android:id="@+id/spEspecie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            />
+
+        <!-- Peso -->
+        <EditText
+            android:id="@+id/etPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso (Kg)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            />
+
+        <!-- Dosis mg/kg -->
+        <EditText
+            android:id="@+id/etDosisMgKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosis (mg/kg)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            />
+
+        <!-- Frecuencia -->
+        <EditText
+            android:id="@+id/etFrecuencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Frecuencia (tomas por día)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="12dp"
+            />
+
+        <!-- Presentación opcional -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presentación (opcional)" />
+
+        <EditText
+            android:id="@+id/etMgPorTableta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mg por tableta"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etMgPorMl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mg por ml (solución)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Calcular"
+                />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Limpiar"
+                android:layout_marginStart="12dp"
+                />
+        </LinearLayout>
+
+        <!--Resultado -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultados:"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
