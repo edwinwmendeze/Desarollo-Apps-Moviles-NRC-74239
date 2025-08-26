@@ -14,7 +14,7 @@ Unidad1/
 ├── Ejercicio2/   # Calculadora básica
 ├── Ejercicio3/   # Calculadora para veterinarios
 ├── Ejercicio4/   # Sistema de ventas
-└── PA1/          # Práctica Autónoma 1 - App con Navigation Drawer
+└── PA1/          # Producto Academico 1 - App con Navigation Drawer
     └── mendez_pa1/
 ```
 
@@ -99,7 +99,7 @@ App para calcular el total de una venta en una tienda de equipos informáticos. 
 
 ---
 
-### PA1: Práctica Autónoma 1 - Navigation Drawer (En desarrollo)
+### PA1: Producto Academico 1 - Navigation Drawer (En desarrollo)
 
 App completa con Navigation Drawer que incluye 5 funciones matemáticas diferentes y splash screen animado. Proyecto diseñado para demostrar el uso de fragments, navegación y cálculos matemáticos.
 
@@ -110,6 +110,9 @@ App completa con Navigation Drawer que incluye 5 funciones matemáticas diferent
 - [MainActivity.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/MainActivity.java) - Navigation Drawer principal
 - [activity_splash.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/activity_splash.xml) - Layout del splash
 - [gradiente.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/drawable/gradiente.xml) - Fondo degradado
+- [AndroidManifest.xml](Unidad1/PA1/mendez_pa1/app/src/main/AndroidManifest.xml) - Configuración del Splash como launcher
+- [colors.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/colors.xml) - Colores del gradiente
+- [animation.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/anim/animation.xml) - Animación fade-in
 
 **Funcionalidades implementadas:**
 - ✅ Splash Activity con animación fade-in (3 segundos)
