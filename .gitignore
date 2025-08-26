@@ -1,0 +1,52 @@
+# =========================
+# Archivos de compilación
+# =========================
+/build
+/app/build
+/captures
+/bin
+/gen
+
+# =========================
+# Archivos de Android Studio
+# =========================
+*.iml
+.gradle
+/.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.idea/
+
+# =========================
+# Archivos de log y temporales
+# =========================
+*.log
+*.temp
+*.tmp
+
+# =========================
+# Archivos del sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Llaves y configuraciones privadas
+# =========================
+*.jks
+*.keystore
+*.gradle
+/signing.properties
+
+# =========================
+# Archivos de salida de pruebas
+# =========================
+/out
+/test-output
+
+/Unidad1
