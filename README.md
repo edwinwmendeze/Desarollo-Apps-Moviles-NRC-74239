@@ -37,11 +37,21 @@ Es una app sencilla donde colocas dos números y te da la suma. También valida 
 
 ---
 
-### Ejercicio 2: Calculadora básica (Pendiente)
+### Ejercicio 2: Calculadora básica (Terminado)
 
-Calculadora que hace las operaciones básicas: suma, resta, multiplicación, división y módulo. Tiene que controlar cuando divides entre cero.
+Calculadora que hace las operaciones básicas: suma, resta, multiplicación, división y módulo. Controla cuando divides entre cero para que no se rompa la app.
 
-*Pendiente de hacer*
+**Archivos principales:**
+- [MainActivity.java](Unidad1/Ejercicio2/app/src/main/java/com/ewme/calculadorabasicaops/MainActivity.java)
+- [activity_main.xml](Unidad1/Ejercicio2/app/src/main/res/layout/activity_main.xml)
+
+**Pruebas:**
+- 12 + 5 = 17
+- 12 - 5 = 7  
+- 12 × 5 = 60
+- 12 ÷ 5 = 2.4
+- 12 % 5 = 2
+- 10 ÷ 0 → Te sale mensaje de error
 
 ---
 
@@ -65,7 +75,7 @@ App para calcular el total de una venta en una tienda de computadoras. Incluye d
 
 1. Abrir Android Studio
 2. File → Open → Elegir la carpeta del ejercicio (ej: `Unidad1/Ejercicio1/`)
-3. Darle al botón Run ▶️
+3. Darle al botón Run ▶
 4. Probar en el emulador o tu celular
 
 ---
