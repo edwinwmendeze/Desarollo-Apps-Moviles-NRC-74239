@@ -77,11 +77,23 @@ App para calcular dosis de medicamentos para perros y gatos según su peso. Calc
 
 ---
 
-### Ejercicio 4: Sistema de ventas (Pendiente)
+### Ejercicio 4: Sistema de ventas (Terminado)
 
-App para calcular el total de una venta en una tienda de computadoras. Incluye descuentos e IGV (18%).
+App para calcular el total de una venta en una tienda de equipos informáticos. Incluye subtotal, descuentos opcionales e IGV (18%) aplicado después del descuento.
 
-*Pendiente de hacer*
+**Archivos principales:**
+- [MainActivity.java](Unidad1/Ejercicio4/app/src/main/java/com/ewme/tiendainfo/MainActivity.java)
+- [activity_main.xml](Unidad1/Ejercicio4/app/src/main/res/layout/activity_main.xml)
+
+**Pruebas:**
+- Laptop HP, precio S/ 2500, cantidad 2, descuento 10%:
+  - Subtotal: S/ 5000.00
+  - Descuento (10%): S/ 500.00
+  - Subtotal con descuento: S/ 4500.00
+  - IGV (18%): S/ 810.00
+  - TOTAL A PAGAR: S/ 5310.00
+- Sin descuento se calcula IGV sobre el subtotal completo
+- Valida que precio y cantidad sean > 0 y descuento entre 0-100%
 
 ---
 
