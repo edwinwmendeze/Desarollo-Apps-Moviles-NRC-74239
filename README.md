@@ -13,7 +13,9 @@ Unidad1/
 ├── Ejercicio1/   # App que suma dos números
 ├── Ejercicio2/   # Calculadora básica
 ├── Ejercicio3/   # Calculadora para veterinarios
-└── Ejercicio4/   # Sistema de ventas
+├── Ejercicio4/   # Sistema de ventas
+└── PA1/          # Práctica Autónoma 1 - App con Navigation Drawer
+    └── mendez_pa1/
 ```
 
 Las otras unidades las voy subiendo conforme avance el semestre.
@@ -94,6 +96,41 @@ App para calcular el total de una venta en una tienda de equipos informáticos. 
   - TOTAL A PAGAR: S/ 5310.00
 - Sin descuento se calcula IGV sobre el subtotal completo
 - Valida que precio y cantidad sean > 0 y descuento entre 0-100%
+
+---
+
+### PA1: Práctica Autónoma 1 - Navigation Drawer (En desarrollo)
+
+App completa con Navigation Drawer que incluye 5 funciones matemáticas diferentes y splash screen animado. Proyecto diseñado para demostrar el uso de fragments, navegación y cálculos matemáticos.
+
+**Estado actual:** ✅ Splash Screen completado
+
+**Archivos principales:**
+- [Splash.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/Splash.java) - Pantalla de inicio animada
+- [MainActivity.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/MainActivity.java) - Navigation Drawer principal
+- [activity_splash.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/activity_splash.xml) - Layout del splash
+- [gradiente.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/drawable/gradiente.xml) - Fondo degradado
+
+**Funcionalidades implementadas:**
+- ✅ Splash Activity con animación fade-in (3 segundos)
+- ✅ Transición automática al Navigation Drawer
+- ✅ Estructura base del Navigation Drawer
+- ✅ Gradiente de fondo personalizado
+- ✅ Configuración correcta del AndroidManifest
+
+**Funcionalidades pendientes:**
+- 🔄 Fragment "Acerca" con datos personales (página por defecto)
+- 🔄 Fragment para calcular área de triángulo (Fórmula de Herón)
+- 🔄 Fragment para generar número aleatorio de 6 dígitos y validar 3 impares
+- 🔄 Fragment para conversión Binario → Decimal  
+- 🔄 Fragment para conversión Hexadecimal → Binario
+- 🔄 Estilos uniformes en todos los layouts
+
+**Pruebas del Splash:**
+- Muestra logo y texto "Desarrollo de PA1" con animación
+- Fondo degradado gris claro a blanco
+- Duración exacta de 3 segundos
+- Transición fluida al menú principal
 
 ---
 
