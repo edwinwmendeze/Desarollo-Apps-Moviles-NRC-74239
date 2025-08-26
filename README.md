@@ -2,16 +2,16 @@
 
 Repositorio de los ejercicios que vamos haciendo en clase. Aquí subo las apps que el profesor nos deja de tarea y lo que hacemos durante las clases.
 
-Todo está hecho en Java usando Android Studio.
+Todo está hecho en Android Studio usando Java.
 
 ---
 
 ## Estructura
 
-```
+``` md
 Unidad1/
 ├── Ejercicio1/   # App que suma dos números
-├── Ejercicio2/   # Calculadora básica  
+├── Ejercicio2/   # Calculadora básica
 ├── Ejercicio3/   # Calculadora para veterinarios
 └── Ejercicio4/   # Sistema de ventas
 ```
@@ -22,7 +22,7 @@ Las otras unidades las voy subiendo conforme avance el semestre.
 
 ## Ejercicios de la Unidad 1
 
-### Ejercicio 1: App que suma números ✅
+### Ejercicio 1: App que suma números (Terminado)
 
 Es una app sencilla donde colocas dos números y te da la suma. También valida que no dejes campos vacíos.
 
@@ -37,7 +37,7 @@ Es una app sencilla donde colocas dos números y te da la suma. También valida 
 
 ---
 
-### Ejercicio 2: Calculadora básica ⏳
+### Ejercicio 2: Calculadora básica (Pendiente)
 
 Calculadora que hace las operaciones básicas: suma, resta, multiplicación, división y módulo. Tiene que controlar cuando divides entre cero.
 
@@ -45,7 +45,7 @@ Calculadora que hace las operaciones básicas: suma, resta, multiplicación, div
 
 ---
 
-### Ejercicio 3: Calculadora para veterinarios ⏳
+### Ejercicio 3: Calculadora para veterinarios (Pendiente)
 
 App para calcular dosis de medicamentos para perros y gatos según su peso. También calcula cuántas pastillas o cuántos ml necesitan.
 
@@ -53,7 +53,7 @@ App para calcular dosis de medicamentos para perros y gatos según su peso. Tamb
 
 ---
 
-### Ejercicio 4: Sistema de ventas ⏳
+### Ejercicio 4: Sistema de ventas (Pendiente)
 
 App para calcular el total de una venta en una tienda de computadoras. Incluye descuentos e IGV (18%).
 
@@ -67,18 +67,6 @@ App para calcular el total de una venta en una tienda de computadoras. Incluye d
 2. File → Open → Elegir la carpeta del ejercicio (ej: `Unidad1/Ejercicio1/`)
 3. Darle al botón Run ▶️
 4. Probar en el emulador o tu celular
-
----
-
-## Para el profesor
-
-**Ejercicio 1 (listo):**
-- [MainActivity.java](Unidad1/Ejercicio1/app/src/main/java/com/ewme/sumatoriadenumeros/MainActivity.java)
-- [activity_main.xml](Unidad1/Ejercicio1/app/src/main/res/layout/activity_main.xml)
-
-**Estado:**
-- Ejercicio 1: ✅ Terminado
-- Ejercicios 2, 3, 4: ⏳ Por hacer
 
 ---
 
