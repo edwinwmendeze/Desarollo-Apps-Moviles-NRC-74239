@@ -2,12 +2,18 @@
     <string name="app_name">mendez_pa1</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Producto Académico 1</string>
+    <string name="nav_header_subtitle">Edwin W. Mendez Echevarria</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_acerca">Acerca</string>
+    <string name="menu_area_triangulo">Área Triángulo</string>
+    <string name="menu_numero_aleatorio">Número Aleatorio</string>
+    <string name="menu_binario_decimal">Binario a Decimal</string>
+    <string name="menu_hex_binario">Hex a Binario</string>
 </resources>

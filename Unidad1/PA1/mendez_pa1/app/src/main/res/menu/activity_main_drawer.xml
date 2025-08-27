@@ -5,16 +5,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_acerca"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="Acerca" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_area_triangulo"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="Área Triángulo" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_numero_aleatorio"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="Número Aleatorio" />
+        <item
+            android:id="@+id/nav_binario_decimal"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Binario a Decimal" />
+        <item
+            android:id="@+id/nav_hex_binario"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Hex a Binario" />
     </group>
 </menu>

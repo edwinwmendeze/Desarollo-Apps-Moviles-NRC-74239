@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_acerca">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="mendez.pa1.org.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_acerca"
+        android:name="mendez.pa1.org.ui.acerca.AcercaFragment"
+        android:label="@string/menu_acerca"
+        tools:layout="@layout/fragment_acerca" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="mendez.pa1.org.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_area_triangulo"
+        android:name="mendez.pa1.org.ui.areatriangulo.AreaTrianguloFragment"
+        android:label="@string/menu_area_triangulo"
+        tools:layout="@layout/fragment_area_triangulo" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="mendez.pa1.org.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_numero_aleatorio"
+        android:name="mendez.pa1.org.ui.numeroaleatorio.NumeroAleatorioFragment"
+        android:label="@string/menu_numero_aleatorio"
+        tools:layout="@layout/fragment_numero_aleatorio" />
+
+    <fragment
+        android:id="@+id/nav_binario_decimal"
+        android:name="mendez.pa1.org.ui.binariodecimal.BinarioDecimalFragment"
+        android:label="@string/menu_binario_decimal"
+        tools:layout="@layout/fragment_binario_decimal" />
+
+    <fragment
+        android:id="@+id/nav_hex_binario"
+        android:name="mendez.pa1.org.ui.hexbinario.HexBinarioFragment"
+        android:label="@string/menu_hex_binario"
+        tools:layout="@layout/fragment_hex_binario" />
+
 </navigation>
