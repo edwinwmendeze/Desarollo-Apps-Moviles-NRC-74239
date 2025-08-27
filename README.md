@@ -103,7 +103,7 @@ App para calcular el total de una venta en una tienda de equipos informáticos. 
 
 App completa con Navigation Drawer que incluye 5 funciones matemáticas diferentes y splash screen animado. Proyecto diseñado para demostrar el uso de fragments, navegación y cálculos matemáticos.
 
-**Estado actual:** ✅ Splash Screen completado
+**Estado actual:** ✅ Estructura base y navegación completadas
 
 **Archivos principales:**
 - [Splash.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/Splash.java) - Pantalla de inicio animada
@@ -113,21 +113,26 @@ App completa con Navigation Drawer que incluye 5 funciones matemáticas diferent
 - [AndroidManifest.xml](Unidad1/PA1/mendez_pa1/app/src/main/AndroidManifest.xml) - Configuración del Splash como launcher
 - [colors.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/colors.xml) - Colores del gradiente
 - [animation.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/anim/animation.xml) - Animación fade-in
+- [styles.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/styles.xml) - Estilos uniformes para todos los layouts
+- [activity_main_drawer.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/menu/activity_main_drawer.xml) - Menú de navegación
+- [mobile_navigation.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/navigation/mobile_navigation.xml) - Navigation graph
 
 **Funcionalidades implementadas:**
 - ✅ Splash Activity con animación fade-in (3 segundos)
 - ✅ Transición automática al Navigation Drawer
-- ✅ Estructura base del Navigation Drawer
-- ✅ Gradiente de fondo personalizado
-- ✅ Configuración correcta del AndroidManifest
+- ✅ Navigation Drawer completamente funcional con 5 opciones
+- ✅ Fragment "Acerca" con datos personales (página por defecto)
+- ✅ Estructura base de todos los fragments matemáticos
+- ✅ Estilos uniformes implementados (styles.xml)
+- ✅ Menú de navegación actualizado
+- ✅ Navigation graph configurado
+- ✅ Proyecto limpio sin archivos innecesarios
 
 **Funcionalidades pendientes:**
-- 🔄 Fragment "Acerca" con datos personales (página por defecto)
-- 🔄 Fragment para calcular área de triángulo (Fórmula de Herón)
-- 🔄 Fragment para generar número aleatorio de 6 dígitos y validar 3 impares
-- 🔄 Fragment para conversión Binario → Decimal  
-- 🔄 Fragment para conversión Hexadecimal → Binario
-- 🔄 Estilos uniformes en todos los layouts
+- 🔄 **Lógica del AreaTrianguloFragment** (Fórmula de Herón - inputs y cálculos)
+- 🔄 **Lógica del NumeroAleatorioFragment** (generar 6 dígitos, validar 3 impares)
+- 🔄 **Lógica del BinarioDecimalFragment** (conversión base 2 → 10)
+- 🔄 **Lógica del HexBinarioFragment** (conversión base 16 → 2)
 
 **Pruebas del Splash:**
 - Muestra logo y texto "Desarrollo de PA1" con animación
