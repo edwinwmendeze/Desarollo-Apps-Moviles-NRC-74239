@@ -19,6 +19,25 @@
         <item name="android:layout_marginBottom">24dp</item>
     </style>
 
+    <!-- Estilo para TextViews normales -->
+    <style name="TextoPA1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Estilo para etiquetas (Nombre:, Código:, etc.) -->
+    <style name="EtiquetaPA1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/purple_700</item>
+    </style>
+
     <!-- Estilo para EditText -->
     <style name="InputPA1">
         <item name="android:layout_width">match_parent</item>

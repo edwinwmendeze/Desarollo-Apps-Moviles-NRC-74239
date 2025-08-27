@@ -7,32 +7,64 @@
         style="@style/TituloFragment"
         android:text="Acerca del Desarrollador" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre: Edwin W. Mendez Echevarria"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+        <TextView
+            style="@style/EtiquetaPA1"
+            android:layout_width="wrap_content"
+            android:text="Nombre: " />
+        <TextView
+            style="@style/TextoPA1"
+            android:layout_width="wrap_content"
+            android:text="Edwin W. Mendez Echevarria" />
+    </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Código: 45088035"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+        <TextView
+            style="@style/EtiquetaPA1"
+            android:layout_width="wrap_content"
+            android:text="Código: " />
+        <TextView
+            style="@style/TextoPA1"
+            android:layout_width="wrap_content"
+            android:text="45088035" />
+    </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Curso: Desarrollo de Aplicaciones Móviles"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+        <TextView
+            style="@style/EtiquetaPA1"
+            android:layout_width="wrap_content"
+            android:text="Curso: " />
+        <TextView
+            style="@style/TextoPA1"
+            android:layout_width="wrap_content"
+            android:text="Desarrollo de Aplicaciones Móviles" />
+    </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NRC: 74239"
-        android:textSize="18sp"
-        android:layout_marginBottom="12dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+        <TextView
+            style="@style/EtiquetaPA1"
+            android:layout_width="wrap_content"
+            android:text="NRC: " />
+        <TextView
+            style="@style/TextoPA1"
+            android:layout_width="wrap_content"
+            android:text="74239" />
+    </LinearLayout>
 
 </LinearLayout>
