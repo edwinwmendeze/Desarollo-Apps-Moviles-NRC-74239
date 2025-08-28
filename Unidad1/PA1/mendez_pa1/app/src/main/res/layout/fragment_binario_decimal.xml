@@ -1,16 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/EstiloPA1"
-    android:orientation="vertical">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EstiloPA1">
 
-    <TextView
-        style="@style/TituloFragment"
-        android:text="Binario a Decimal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
 
-    <TextView
-        style="@style/TextoPA1"
-        android:text="Solo estamos creando la base"
-        android:gravity="center"
-        android:layout_marginTop="50dp" />
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            style="@style/TituloFragment"
+            android:text="Conversión Binario → Decimal" />
 
-</LinearLayout>
+        <!-- Descripción -->
+        <TextView
+            style="@style/TextoPA1"
+            android:text="3.	Convertir un número binario a base diez."
+            android:layout_marginBottom="24dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Input binario -->
+        <EditText
+            android:id="@+id/etBinario"
+            style="@style/InputPA1"
+            android:hint="Ingrese número binario"
+            android:digits="01"
+            android:inputType="number" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnConvertir"
+                style="@style/BotonPA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Convertir" />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                style="@style/BotonPA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpiar"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/tvResultado"
+            style="@style/TextoPA1"
+            android:text="Resultado: "
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+</ScrollView>
