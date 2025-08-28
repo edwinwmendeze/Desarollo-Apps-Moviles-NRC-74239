@@ -67,6 +67,7 @@ public class NumeroAleatorioFragment extends Fragment {
     }
 
     private void limpiar(){
+        tvNumeroGenerado.setText("Número generado: ");
         tvResultado.setText("Resultado: ");
     }
 }
