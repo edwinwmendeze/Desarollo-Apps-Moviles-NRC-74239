@@ -11,4 +11,22 @@
     <color name="colorInicio">#cccccc</color>
     <color name="colorFin">#ffffff</color>
 
+    <!-- Paleta PA1 basada en logo y tema -->
+    <!-- Colores del logo coder -->
+    <color name="logo_azul_oscuro">#19223c</color>
+    <color name="logo_verde_azulado">#67a4ac</color>
+    
+    <!-- Colores del NavDrawer -->
+    <color name="nav_verde_claro">#4DB6AC</color>
+    <color name="nav_verde_medio">#009688</color>
+    <color name="nav_verde_oscuro">#00695C</color>
+    
+    <!-- Paleta unificada PA1 -->
+    <color name="primario_pa1">#009688</color>        <!-- Verde medio principal -->
+    <color name="primario_oscuro_pa1">#00695C</color> <!-- Verde oscuro -->
+    <color name="secundario_pa1">#67a4ac</color>      <!-- Verde azulado del logo -->
+    <color name="acento_pa1">#4DB6AC</color>          <!-- Verde claro -->
+    <color name="texto_primario_pa1">#19223c</color>  <!-- Azul oscuro del logo -->
+    <color name="texto_secundario_pa1">#666666</color> <!-- Gris medio -->
+
 </resources>
