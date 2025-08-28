@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/EstiloPA1"
-    android:orientation="vertical">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EstiloPA1">
 
-    <TextView
-        style="@style/TituloFragment"
-        android:text="Área del Triángulo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
 
-    <TextView
-        style="@style/TextoPA1"
-        android:text="Solo estamos creando la base"
-        android:gravity="center"
-        android:layout_marginTop="50dp" />
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            style="@style/TituloFragment"
+            android:text="Área del Triángulo (Herón)" />
 
-</LinearLayout>
+        <!-- Inputs para los 3 lados -->
+        <EditText
+            android:id="@+id/etLado1"
+            style="@style/InputPA1"
+            android:hint="Primer lado (cm)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etLado2"
+            style="@style/InputPA1"
+            android:hint="Segundo lado (cm)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etLado3"
+            style="@style/InputPA1"
+            android:hint="Tercer lado (cm)"
+            android:inputType="numberDecimal" />
+
+        <!-- LinearLayout Horizontal para agrupar botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="8dp">
+
+            <!-- Botón para calcular el área -->
+            <Button
+                android:id="@+id/btnCalcular"
+                style="@style/BotonPA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calcular" />
+
+            <!-- Botón para limpiar los campos -->
+            <Button
+                android:id="@+id/btnLimpiar"
+                style="@style/BotonPA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpiar"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+        <!-- RESULTADO -->
+        <TextView
+            android:id="@+id/tvResultado"
+            style="@style/TextoPA1"
+            android:text="Resultado: "
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:background="#F5F5F5" />
+
+
+    </LinearLayout>
+</ScrollView>
