@@ -14,6 +14,13 @@
             style="@style/TituloFragment"
             android:text="Área del Triángulo (Herón)" />
 
+        <!-- Descripción -->
+        <TextView
+            style="@style/TextoPA1"
+            android:text="1.	Calcular el área de un triángulo cualquiera considerando la longitud de sus lados"
+            android:layout_marginBottom="24dp"
+            android:justificationMode="inter_word"/>
+
         <!-- Inputs para los 3 lados -->
         <EditText
             android:id="@+id/etLado1"

@@ -1,16 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/EstiloPA1"
-    android:orientation="vertical">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EstiloPA1">
 
-    <TextView
-        style="@style/TituloFragment"
-        android:text="Número Aleatorio" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
 
-    <TextView
-        style="@style/TextoPA1"
-        android:text="Solo estamos creando la base"
-        android:gravity="center"
-        android:layout_marginTop="50dp" />
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            style="@style/TituloFragment"
+            android:text="Número Aleatorio con Validación" />
 
-</LinearLayout>
+        <!-- Descripción -->
+        <TextView
+            style="@style/TextoPA1"
+            android:text="2.	Determinar si un número generado aleatoriamente de 6 cifras es adecuado para un experimento, donde se requiere que contenga 3 dígitos impares en cualquier posición, al cumplir esta condición se debe mostrar el mensaje es correcto. El número aleatorio se debe generar en un único proceso"
+            android:layout_marginBottom="24dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnGenerar"
+                style="@style/BotonPA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Generar" />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                style="@style/BotonPA1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpiar"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- Número generado -->
+        <TextView
+            android:id="@+id/tvNumeroGenerado"
+            style="@style/TextoPA1"
+            android:text="Número generado: "
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="#E3F2FD"
+            android:textSize="18sp"/>
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/tvResultado"
+            style="@style/TextoPA1"
+            android:text="Resultado: "
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+</ScrollView>
