@@ -12,4 +12,10 @@
     <string name="menu_numero_aleatorio">Número Aleatorio</string>
     <string name="menu_binario_decimal">Binario a Decimal</string>
     <string name="menu_hex_binario">Hex a Binario</string>
+
+    <string name="fragment_acerca_nombre">Edwin W. Mendez Echevarria</string>">
+    <string name="fragment_acerca_codigo">45088035</string>
+    <string name="fragment_acerca_curso">Desarrollo de Aplicaciones Móviles</string>
+    <string name="fragment_acerca_nrc">74239</string>
+
 </resources>
