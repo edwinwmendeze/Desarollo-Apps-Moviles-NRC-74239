@@ -99,46 +99,96 @@ App para calcular el total de una venta en una tienda de equipos informáticos. 
 
 ---
 
-### PA1: Producto Academico 1 - Navigation Drawer (En desarrollo)
+### PA1: Producto Academico 1 - Navigation Drawer (✅ COMPLETADO)
 
-App completa con Navigation Drawer que incluye 5 funciones matemáticas diferentes y splash screen animado. Proyecto diseñado para demostrar el uso de fragments, navegación y cálculos matemáticos.
+App completa con Navigation Drawer que incluye 5 funciones matemáticas diferentes y splash screen animado. Proyecto diseñado para demostrar el uso de fragments, navegación, cálculos matemáticos y conversiones numéricas.
 
-**Estado actual:** ✅ Estructura base y navegación completadas
+**Estado actual:** ✅ TODAS LAS FUNCIONALIDADES IMPLEMENTADAS Y PROBADAS
 
 **Archivos principales:**
-- [Splash.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/Splash.java) - Pantalla de inicio animada
+
+**🎬 Splash & Navigation:**
+- [Splash.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/Splash.java) - Pantalla de inicio animada (3 segundos)
 - [MainActivity.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/MainActivity.java) - Navigation Drawer principal
 - [activity_splash.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/activity_splash.xml) - Layout del splash
-- [gradiente.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/drawable/gradiente.xml) - Fondo degradado
-- [AndroidManifest.xml](Unidad1/PA1/mendez_pa1/app/src/main/AndroidManifest.xml) - Configuración del Splash como launcher
-- [colors.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/colors.xml) - Colores del gradiente
+- [app_bar_main.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/app_bar_main.xml) - AppBar sin FAB ni menú settings
+
+**🎨 Estilos y Recursos:**
+- [styles.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/styles.xml) - Sistema completo de estilos uniformes
+- [colors.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/colors.xml) - Paleta de colores personalizada basada en logo
+- [themes.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/themes.xml) - Tema personalizado integrado
+- [gradiente.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/drawable/gradiente.xml) - Fondo degradado del splash
 - [animation.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/anim/animation.xml) - Animación fade-in
-- [styles.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/values/styles.xml) - Estilos uniformes para todos los layouts
+
+**🧮 Fragment 1: Área del Triángulo (Fórmula de Herón)**
+- [AreaTrianguloFragment.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/ui/areatriangulo/AreaTrianguloFragment.java)
+- [fragment_area_triangulo.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/fragment_area_triangulo.xml)
+- **Funcionalidad:** Calcula área usando la fórmula de Herón con validaciones de triángulo válido
+- **Validaciones:** Campos vacíos, desigualdad triangular, formato de resultado con 2 decimales
+
+**🎲 Fragment 2: Número Aleatorio con Validación**
+- [NumeroAleatorioFragment.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/ui/numeroaleatorio/NumeroAleatorioFragment.java)
+- [fragment_numero_aleatorio.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/fragment_numero_aleatorio.xml)
+- **Funcionalidad:** Genera número aleatorio de 6 dígitos y determina si tiene exactamente 3 dígitos impares
+- **Validaciones:** Muestra "Es correcto" o "No es adecuado" con conteo de impares
+
+**🔢 Fragment 3: Conversión Binario → Decimal**
+- [BinarioDecimalFragment.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/ui/binariodecimal/BinarioDecimalFragment.java)
+- [fragment_binario_decimal.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/fragment_binario_decimal.xml)
+- **Funcionalidad:** Convierte números binarios a decimales usando algoritmo de potencias de 2
+- **Validaciones:** Solo acepta 0s y 1s (validado en layout con `android:digits="01"`)
+
+**🔤 Fragment 4: Conversión Hexadecimal → Binario**
+- [HexBinarioFragment.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/ui/hexbinario/HexBinarioFragment.java)
+- [fragment_hex_binario.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/fragment_hex_binario.xml)
+- **Funcionalidad:** Convierte hexadecimales a binarios (cada dígito hex = 4 bits binarios)
+- **Validaciones:** Solo acepta caracteres hexadecimales válidos (0-9, A-F)
+
+**👤 Fragment 5: Acerca de**
+- [AcercaFragment.java](Unidad1/PA1/mendez_pa1/app/src/main/java/mendez/pa1/org/ui/acerca/AcercaFragment.java)
+- [fragment_acerca.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/layout/fragment_acerca.xml)
+- **Funcionalidad:** Información personal del desarrollador
+
+**🛠️ Configuración:**
+- [AndroidManifest.xml](Unidad1/PA1/mendez_pa1/app/src/main/AndroidManifest.xml) - Splash como launcher, permisos
 - [activity_main_drawer.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/menu/activity_main_drawer.xml) - Menú de navegación
 - [mobile_navigation.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/navigation/mobile_navigation.xml) - Navigation graph
+- [main.xml](Unidad1/PA1/mendez_pa1/app/src/main/res/menu/main.xml) - Menú settings deshabilitado
 
-**Funcionalidades implementadas:**
+**✅ Funcionalidades completadas:**
 - ✅ Splash Activity con animación fade-in (3 segundos)
-- ✅ Transición automática al Navigation Drawer
-- ✅ Navigation Drawer completamente funcional con 5 opciones
-- ✅ Fragment "Acerca" con datos personales (página por defecto)
-- ✅ Estructura base de todos los fragments matemáticos
-- ✅ Estilos uniformes implementados (styles.xml)
-- ✅ Menú de navegación actualizado
-- ✅ Navigation graph configurado
-- ✅ Proyecto limpio sin archivos innecesarios
+- ✅ Navigation Drawer completamente funcional
+- ✅ Sistema de estilos uniforme y paleta de colores personalizada
+- ✅ **Área del Triángulo:** Fórmula de Herón con validaciones completas
+- ✅ **Número Aleatorio:** Generación y validación de 3 dígitos impares
+- ✅ **Binario → Decimal:** Conversión con algoritmo de potencias de 2
+- ✅ **Hexadecimal → Binario:** Conversión dígito por dígito (switch statement)
+- ✅ **Fragment Acerca:** Información del desarrollador
+- ✅ FAB y menú settings deshabilitados (comentados)
+- ✅ Validaciones de entrada en todos los fragments
+- ✅ Manejo de errores y mensajes Toast informativos
+- ✅ Layouts responsivos con ScrollView
 
-**Funcionalidades pendientes:**
-- 🔄 **Lógica del AreaTrianguloFragment** (Fórmula de Herón - inputs y cálculos)
-- 🔄 **Lógica del NumeroAleatorioFragment** (generar 6 dígitos, validar 3 impares)
-- 🔄 **Lógica del BinarioDecimalFragment** (conversión base 2 → 10)
-- 🔄 **Lógica del HexBinarioFragment** (conversión base 16 → 2)
+**🧪 Casos de prueba validados:**
 
-**Pruebas del Splash:**
-- Muestra logo y texto "Desarrollo de PA1" con animación
-- Fondo degradado gris claro a blanco
-- Duración exacta de 3 segundos
-- Transición fluida al menú principal
+**Área del Triángulo:**
+- Triángulos válidos: (3,4,5)→6.00 cm², (5,5,5)→10.83 cm²
+- Triángulos inválidos: (1,2,5) muestra error de desigualdad triangular
+- Campos vacíos: muestra Toast de validación
+
+**Número Aleatorio:**
+- Genera números de exactamente 6 dígitos (100000-999999)
+- Identifica correctamente si tiene 3 dígitos impares
+- Muestra conteo detallado cuando no cumple condición
+
+**Binario → Decimal:**
+- "1011" → 11, "1111" → 15, "10101" → 21
+- Solo acepta 0s y 1s en tiempo real
+
+**Hexadecimal → Binario:**
+- "1A2F" → "0001101000101111"
+- "FF" → "11111111"
+- Maneja mayúsculas y minúsculas automáticamente
 
 ---
 
