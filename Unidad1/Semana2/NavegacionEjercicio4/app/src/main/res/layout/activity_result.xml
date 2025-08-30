@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Resumen de compra"
+            android:textStyle="bold" android:textSize="20sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvProducto"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Producto:"/>
+
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Subtotal:"/>
+
+        <TextView
+            android:id="@+id/tvDescuento"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Descuento:"/>
+
+        <TextView
+            android:id="@+id/tvEnvio"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Envío:"/>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="TOTAL:"/>
+
+        <!-- Muestra el porcentaje de descuento aplicado -->
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Descuento aplicado (%)" android:layout_marginTop="16dp"/>
+        <ProgressBar
+            android:id="@+id/progDescuento"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="100" android:progress="0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnCompartir"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Compartir"/>
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Volver"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

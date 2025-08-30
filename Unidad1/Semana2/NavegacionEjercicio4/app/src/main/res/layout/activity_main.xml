@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venta rápida"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Producto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producto" />
+
+        <Spinner
+            android:id="@+id/spProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Precio y cantidad -->
+        <EditText
+            android:id="@+id/etPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio unitario (S/.)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:layout_marginTop="8dp" />
+
+        <!-- Envío -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de envío"
+            android:layout_marginTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/rgEnvio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbEstandar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estándar (S/ 0)" />
+
+            <RadioButton
+                android:id="@+id/rbExpress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Express (S/ 15)"
+                android:layout_marginStart="12dp" />
+        </RadioGroup>
+
+        <!-- Descuento -->
+        <Switch
+            android:id="@+id/swDescuento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplicar descuento 10%"
+            android:layout_marginTop="12dp" />
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/btnProcesar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procesar y ver resumen"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
