@@ -1,7 +1,7 @@
 # PA1 - Producto Académico 1: Navigation Drawer
 
 ## Información del Estudiante
-- **Estudiante:** Edwin Wladimir Mendez
+- **Estudiante:** Edwin W. Mendez Echevarria
 - **Curso:** Desarrollo de Aplicaciones Móviles
 - **NRC:** 74239
 
@@ -187,4 +187,5 @@ switch (hexChar) {
 ---
 
 **Curso:** Desarrollo de Aplicaciones Móviles - NRC 74239  
+
 **Estado:** PROYECTO COMPLETADO ✓
